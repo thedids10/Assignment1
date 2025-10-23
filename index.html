@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header с фиксированным меню -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Обо мне</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Навыки</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">Портфолио</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Контакты</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero секция -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__title-main">Привет, я</span>
+                    <span class="hero__title-name">Нурсултан Турсунбаев</span>
+                    <span class="hero__title-role">Frontend Developer</span>
+                </h1>
+                <p class="hero__description">
+                    Создаю современные и интерактивные веб-приложения с использованием 
+                    передовых технологий и лучших практик разработки.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#portfolio" class="btn btn--primary">Мои работы</a>
+                    <a href="#contact" class="btn btn--secondary">Связаться</a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__avatar">
+                    <img src="123.jpg" alt="Нурсултан Турсунбаев" class="hero__photo">
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- About секция -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section__title">Обо мне</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p class="about__description">
+                        Я увлеченный frontend разработчик с более чем 1 годом опыта создания 
+                        современных веб-приложений. Специализируюсь на React, Vue.js и чистом JavaScript.
+                    </p>
+                    <p class="about__description">
+                        Моя цель - создавать не только функциональные, но и красивые пользовательские 
+                        интерфейсы, которые обеспечивают отличный пользовательский опыт.
+                    </p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number">5+</span>
+                            <span class="stat__label">Проектов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">1</span>
+                            <span class="stat__label">Год опыта</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">100%</span>
+                            <span class="stat__label">Довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image">
+                    <div class="about__photo">
+                        <img src="123.jpg" alt="Нурсултан Турсунбаев" class="about__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Skills секция -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section__title">Навыки</h2>
+            <div class="skills__grid">
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-card__title">HTML5</h3>
+                    <div class="skill-card__progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95"></div>
+                        </div>
+                        <span class="progress-text">95%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-card__title">CSS3</h3>
+                    <div class="skill-card__progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                        <span class="progress-text">90%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3 class="skill-card__title">JavaScript</h3>
+                    <div class="skill-card__progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85"></div>
+                        </div>
+                        <span class="progress-text">85%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-card__title">React</h3>
+                    <div class="skill-card__progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80"></div>
+                        </div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <h3 class="skill-card__title">Vue.js</h3>
+                    <div class="skill-card__progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75"></div>
+                        </div>
+                        <span class="progress-text">75%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-card__title">Node.js</h3>
+                    <div class="skill-card__progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70"></div>
+                        </div>
+                        <span class="progress-text">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Portfolio секция -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section__title">Портфолио</h2>
+            <div class="portfolio__filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="web">Веб-сайты</button>
+                <button class="filter-btn" data-filter="app">Приложения</button>
+                <button class="filter-btn" data-filter="design">Дизайн</button>
+            </div>
+            <div class="portfolio__grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-item__image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Корпоративный сайт</h3>
+                            <p class="portfolio-item__description">Современный лендинг для IT-компании</p>
+                            <div class="portfolio-item__links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/thedids10" class="portfolio-link" target="_blank" rel="noopener noreferrer" title="GitHub репозиторий">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-item__image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Мобильное приложение</h3>
+                            <p class="portfolio-item__description">React Native приложение для доставки</p>
+                            <div class="portfolio-item__links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/thedids10" class="portfolio-link" target="_blank" rel="noopener noreferrer" title="GitHub репозиторий">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-item__image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Интернет-магазин</h3>
+                            <p class="portfolio-item__description">E-commerce платформа на Vue.js</p>
+                            <div class="portfolio-item__links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/thedids10" class="portfolio-link" target="_blank" rel="noopener noreferrer" title="GitHub репозиторий">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-item__image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">UI/UX Дизайн</h3>
+                            <p class="portfolio-item__description">Дизайн системы для финтех приложения</p>
+                            <div class="portfolio-item__links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/thedids10" class="portfolio-link" target="_blank" rel="noopener noreferrer" title="GitHub репозиторий">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-item__image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Дашборд аналитики</h3>
+                            <p class="portfolio-item__description">React приложение для визуализации данных</p>
+                            <div class="portfolio-item__links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/thedids10" class="portfolio-link" target="_blank" rel="noopener noreferrer" title="GitHub репозиторий">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-item__image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Блог платформа</h3>
+                            <p class="portfolio-item__description">CMS для ведения блога с админ-панелью</p>
+                            <div class="portfolio-item__links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/thedids10" class="portfolio-link" target="_blank" rel="noopener noreferrer" title="GitHub репозиторий">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Contact секция -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section__title">Связаться со мной</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__title">Давайте работать вместе!</h3>
+                    <p class="contact__description">
+                        Готов обсудить ваш проект и предложить лучшие решения 
+                        для достижения ваших целей.
+                    </p>
+                    <div class="contact__items">
+                        <div class="contact__item">
+                            <i class="fas fa-envelope"></i>
+                            <span>thedids10@gmail.com</span>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (700) 274-41-95</span>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Астана, Казахстан</span>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="https://github.com/thedids10" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nursultan-tursunbaev-4156b1314/" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://t.me/bebrishkin" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form" action="https://formspree.io/f/manpgrzg" method="POST">
+                    <div class="form__group">
+                        <input type="text" class="form__input" id="name" name="name" placeholder="Ваше имя" required>
+                        <label for="name" class="form__label">Имя</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" id="email" name="email" placeholder="Ваш email" required>
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" class="form__input" id="subject" name="subject" placeholder="Тема сообщения" required>
+                        <label for="subject" class="form__label">Тема</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea class="form__input form__textarea" id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                        <label for="message" class="form__label">Сообщение</label>
+                    </div>
+                    <!-- Honeypot field for spam protection -->
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                    <button type="submit" class="btn btn--primary btn--full">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">&copy; 2024 Нурсултан Турсунбаев. Все права защищены.</p>
+                <div class="footer__links">
+                    <a href="#home" class="footer__link">Главная</a>
+                    <a href="#about" class="footer__link">Обо мне</a>
+                    <a href="#skills" class="footer__link">Навыки</a>
+                    <a href="#portfolio" class="footer__link">Портфолио</a>
+                    <a href="#contact" class="footer__link">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
