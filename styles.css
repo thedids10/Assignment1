@@ -817,6 +817,17 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+/* Robot icon specific styling */
+.portfolio-placeholder .fa-robot {
+  color: white;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
 .portfolio-item__overlay {
   position: absolute;
   top: 0;
@@ -831,6 +842,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transition: opacity var(--transition-normal);
   padding: var(--spacing-lg);
+  z-index: 2;
 }
 
 .portfolio-item:hover .portfolio-item__overlay {
@@ -853,6 +865,9 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio-item__links {
   display: flex;
   gap: var(--spacing-md);
+  z-index: 4;
+  position: relative;
+  pointer-events: auto;
 }
 
 .portfolio-link {
@@ -866,11 +881,18 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   text-decoration: none;
   transition: all var(--transition-normal);
+  z-index: 3;
+  position: relative;
+  pointer-events: auto;
 }
 
 .portfolio-link:hover {
   background: var(--secondary-color);
   transform: scale(1.1);
+}
+
+.portfolio-link:active {
+  transform: scale(0.95);
 }
 
 /* Contact Section */

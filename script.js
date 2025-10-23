@@ -126,6 +126,39 @@ filterButtons.forEach(button => {
     });
 });
 
+// Portfolio item hover and click handling
+portfolioItems.forEach(item => {
+    const links = item.querySelectorAll('.portfolio-link');
+    
+    // Ensure links are clickable
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Link will navigate naturally
+        });
+        
+        // Prevent overlay from interfering with link clicks
+        link.addEventListener('mouseenter', (e) => {
+            e.stopPropagation();
+        });
+    });
+    
+    // Handle item hover
+    item.addEventListener('mouseenter', () => {
+        const overlay = item.querySelector('.portfolio-item__overlay');
+        if (overlay) {
+            overlay.style.opacity = '1';
+        }
+    });
+    
+    item.addEventListener('mouseleave', () => {
+        const overlay = item.querySelector('.portfolio-item__overlay');
+        if (overlay) {
+            overlay.style.opacity = '0';
+        }
+    });
+});
+
 // Form Validation
 function validateForm() {
     const name = document.getElementById('name');
